@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasha's Photo Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Lora', serif;
+            background-image: linear-gradient(to bottom right, #FFEBD6, #FFEBDD); /* Приятный фоновий градиент */
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+        }
+        
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            letter-spacing: 1px;
+            color: #3A5B7C;
+        }
+        
+        button {
+            background-color: transparent;
+            border: 2px solid #3A5B7C;
+            color: #3A5B7C;
+            padding: 1em 2em;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            outline: none;
+            margin: 0.5em;
+            border-radius: 5px;
+        }
+        
+        button:hover,
+        button:focus {
+            background-color: #3A5B7C;
+            color: #FFEBD6;
+        }
+        
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            button {
+                font-size: 1rem;
+                padding: 0.8em 1.5em;
+            }
+        }
+        
+        footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background-color: #3A5B7C;
+            color: #FFEBD6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Dasha's Monthly Photo Collection</h1>
+    <div style="display: grid; gap: 1em; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));">
+        <button onclick="window.location.href='https://disk.yandex.ru/d/15SNLtg056ru7w'">January</button>
+        <button onclick="window.location.href='https://disk.yandex.ru/d/9lNHppa_Ir7vcA'">February</button>
+        <button onclick="window.location.href='https://disk.yandex.ru/d/whlv1TXUqoCwTg'">March</button>
+        <button onclick="window.location.href='https://disk.yandex.ru/d/your-april-link'">April</button>
+        <button onclick="window.location.href='https://disk.yandex.ru/d/your-may-link'">May</button>
+        <button onclick="window.location.href='https://disk.yandex.ru/d/your-june-link'">June</button>
+        <button onclick="window.location.href='https://disk.yandex.ru/d/your-july-link'">July</button>
+        <button onclick="window.location.href='https://disk.yandex.ru/d/your-august-link'">August</button>
+        <button onclick="window.location.href='https://disk.yandex.ru/d/your-september-link'">September</button>
+        <button onclick="window.location.href='https://disk.yandex.ru/d/your-october-link'">October</button>
+        <button onclick="window.location.href='https://disk.yandex.ru/d/your-november-link'">November</button>
+        <button onclick="window.location.href='https://disk.yandex.ru/d/your-december-link'">December</button>
+    </div>
+</div>
+
+<!-- Футер -->
+<footer>&copy; All rights reserved | A gift for Dashyla</footer>
+</body>
+</html>
